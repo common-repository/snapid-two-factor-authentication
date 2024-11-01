@@ -1,0 +1,209 @@
+.snapid-register {
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%);
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 );
+	height: 68px;
+	width: 300px;
+	margin: 15px 0;
+	display: block;
+	cursor: pointer;
+	border: 2px solid #ccc;
+	border-bottom: 5px solid #ccc;
+	border-radius: 5px;
+	padding: 0;
+}
+
+.snapid-register:hover {
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(221,221,221,1) 100%);
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(221,221,221,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(221,221,221,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dddddd', GradientType=0);
+}
+
+.snapid-register span {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url("../images/SnapID-Register-Button.png") center center no-repeat;
+	text-indent: -9999px;
+}
+
+.snapid-settings {
+	width: 67%;
+	float: left;
+	position: relative;
+}
+
+.snapid-hide-videos .snapid-settings {
+	width: 100%;
+	float: none;
+}
+
+.snapid-main-form::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 32%;
+	border-left: 1px solid #ddd;
+}
+
+.snapid-hide-videos .snapid-main-form::after {
+	border: none;
+	position: static;
+}
+
+.snapid-videos {
+	width: 30%;
+	float: right;
+	position: relative;
+}
+
+.snapid-videos h3 {
+	margin-top: 30px;
+}
+
+.snapid-video-wrapper {
+	margin-bottom: 1em;
+}
+
+.snapid-toggle-videos {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+	color: #0073aa;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+.snapid-toggle-videos:hover {
+	color: #00a0d2;
+}
+
+.snapid-toggle-videos span {
+	position: absolute;
+	left: -18px;
+	width: 12px;
+	height: 12px;
+	font-size: 1.75em;
+	line-height: 0;
+	color: #0073aa;
+}
+
+.snapid-toggle-videos span::after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	right: 0;
+	left: 0;
+	height: 2px;
+	background: #0073aa;
+}
+
+.snapid-toggle-videos:hover span::after {
+	background: #00a0d2;
+}
+
+.snapid-hide-videos .snapid-toggle-videos span::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 5px;
+	width: 2px;
+	background: #0073aa;
+}
+
+.snapid-hide-videos .snapid-toggle-videos:hover span::before {
+	background: #00a0d2;
+}
+
+.snapid-hide-videos .snapid-videos {
+	display: none;
+}
+
+@media (max-width: 782px) {
+
+	.snapid-toggle-videos {
+		display: none;
+	}
+
+	.snapid-main-form::after {
+		position: static;
+		border-left: none;
+	}
+
+	.snapid-videos {
+		display: none;
+	}
+
+	.snapid-settings {
+		width: 100%;
+		float: none;
+	}
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+
+	.snapid-register span {
+		background: url("../images/SnapID-Register-Button2x.png") center center no-repeat;
+		background-size: 219px;
+	}
+
+}
+
+.snapid-radio {
+	margin-right: 15px;
+}
+
+.snapid-form {
+	padding: 0 10px;
+}
+
+.snapid-display-message {
+	color: #0897F1;
+	font-weight: bold;
+	line-height: 18px;
+	display: none;
+}
+
+.spinner.snapid-spinner {
+	float: left;
+	display: none;
+	visibility: visible;
+	position: relative;
+}
+
+.spinner.snapid-spinner span {
+	position: absolute;
+	left: 25px;
+	display: block;
+	white-space: nowrap;
+	line-height: 20px;
+}
+
+.snapid-ease-red {
+	-moz-transition: color 1s ease;
+	-webkit-transition: color 1s ease;
+	transition: color 1s ease;
+	color: #f00;
+}
+
+.snapid-clearfix {
+	clear: both;
+}
+
+.form-table td p.snapid-creds {
+	font-size: smaller;
+}
+
+.snapid-creds strong {
+	float: left;
+	width: 120px;
+}
